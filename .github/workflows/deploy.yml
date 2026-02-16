@@ -17,6 +17,7 @@ jobs:
         username: ${{ secrets.AWS_USERNAME }}
         key: ${{ secrets.AWS_SSH_KEY }}
         script: |
+          git config --global --add safe.directory /var/www/html/aws-backend/php-backend
           cd /var/www/html/aws-backend/php-backend/
           git reset --hard
           git pull origin main
