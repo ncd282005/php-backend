@@ -1,5 +1,5 @@
 <?php
 echo json_encode([
     "status" => true,
-    "message" => "Hello World from Local"
+    "message" => "Hello World from server "
 ]);
