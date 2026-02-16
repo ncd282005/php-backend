@@ -17,7 +17,7 @@ jobs:
         username: ${{ secrets.AWS_USERNAME }}
         key: ${{ secrets.AWS_SSH_KEY }}
         script: |
-          cd /var/www/html/aws-backend/php-backend/index.php
+          cd /var/www/html/aws-backend/php-backend/
           git reset --hard
           git pull origin main
 
